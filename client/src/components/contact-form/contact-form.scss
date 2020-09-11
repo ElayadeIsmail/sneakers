@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.contact-form {
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 20PX 40px 0 #dedede;
+  background: $light_color;
+  color: #111111;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: auto;
+
+  .alert {
+    width: 100%;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .danger {
+    background: $red;
+  }
+
+  .success {
+    background: $green;
+  }
+
+  .form-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: .4rem auto;
+
+    label {
+      margin-bottom: .2rem;
+      padding-left: .4rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background: #fff;
+      border: 1px solid #111111;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .submit {
+    background: $dark_yellow;
+    color: white;
+    padding: 10px;
+    margin: .5rem auto;
+    width: 100%;
+  }
+}

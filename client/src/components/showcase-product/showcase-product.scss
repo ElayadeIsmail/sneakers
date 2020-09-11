@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.showcase_products {
+  padding: 7rem 0;
+  background: #eeeeee;
+
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

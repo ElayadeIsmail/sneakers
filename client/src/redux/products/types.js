@@ -1,0 +1,8 @@
+export const GET_PRODUCTS = "GET_PRODUCTS";
+export const GET_PRODUCT = "GET_PRODUCT";
+export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
+export const CLEAR_PRODUCT = "CLEAR_PRODUCT";
+export const PRODUCT_ERROR = "PRODUCT_ERROR";
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const SHORT_PRODUCT = "SHORT_PRODUCT";
+export const UPDATE_TOTAL = "UPDATE_TOTAL";

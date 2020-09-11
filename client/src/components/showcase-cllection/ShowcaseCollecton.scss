@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.showcase-collection {
+  padding: 7rem 0;
+
+  .collection-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

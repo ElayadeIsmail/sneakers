@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.collection {
+  display: flex;
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+  padding: 1rem;
+  border-radius: 1em;
+  margin-bottom: 5em;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 50%;
+
+    @media screen and (max-width:600px) {
+      width: 100%;
+    }
+
+    h1 {
+      color: var(--clr-accent);
+      padding: 1rem 2rem;
+      background: rgba($color: #fff, $alpha: .5);
+    }
+
+    .btn {
+      background: var(--clr-accent);
+      color: white;
+      padding: 12px;
+      border-radius: 4px;
+    }
+  }
+
+  .collection-img {
+    @media screen and (max-width:600px) {
+      width: 100%;
+    }
+
+    width: 50%;
+    float: right;
+    shape-outside: url(../../images/shoe-1.png);
+
+  }
+
+  .collection-img.left {
+    float: left;
+    shape-outside: url(../../images/shoe-1.png);
+  }
+}
+
+.blue {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}
+
+.yellow {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.white {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}

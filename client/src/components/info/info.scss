@@ -1,0 +1,99 @@
+@import "../../styles/variables.scss";
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+
+  .s2 {
+    padding: 2rem 0;
+    background: $light_color;
+
+
+    .sections {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width:800px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .pr {
+        padding-right: 1rem;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        --spacer: .5rem;
+
+
+
+
+
+        h3,
+        h2 {
+          color: $red;
+
+        }
+
+        a {
+          color: black;
+
+        }
+
+      }
+
+      .wild {
+        width: 30%;
+
+        @media screen and (max-width:800px) {
+          width: 60%;
+        }
+      }
+
+      .small {
+        @media screen and (max-width:800px) {
+          width: 30%;
+        }
+      }
+
+      input {
+        width: 100%;
+        padding: 6px 12px;
+        margin-top: .5rem;
+        border: 2px solid $red;
+        border-radius: 4px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+  }
+
+  footer {
+    background: $light_yellow;
+    padding: .5rem 1rem;
+    text-align: center;
+
+    color: black;
+    font-weight: bold;
+
+    span {
+      color: $red;
+    }
+  }
+
+}
